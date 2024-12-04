@@ -7,12 +7,13 @@ class SearchScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Search'),
+        title: const Text('Profile'),
+        backgroundColor: Colors.lime,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Text('Ini adalah halaman search'),
-      ),
+      body: const Padding(
+          padding: EdgeInsets.all(16),
+          child: Text('Ini adalah halaman profile')),
+      backgroundColor: Colors.lime.shade200,
     );
   }
 }

@@ -38,7 +38,8 @@ class _MainScreenState extends State<MainScreen> {
           //item kedua
           BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
           //item ketiga
-          BottomNavigationBarItem( icon: Icon(Icons.favorite), label: 'Favorite'),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.favorite), label: 'Favorite'),
           //item keempat
           BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
         ],

@@ -8,11 +8,12 @@ class FavoriteScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Favorite'),
+        backgroundColor: Colors.teal,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Text('Ini adalah halaman favorite'),
-      ),
+      body: const Padding(
+          padding: EdgeInsets.all(16),
+          child: Text('Ini adalah halaman favorite')),
+      backgroundColor: Colors.teal.shade200,
     );
   }
 }
