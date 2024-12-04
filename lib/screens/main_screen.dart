@@ -29,6 +29,26 @@ class _MainScreenState extends State<MainScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: _screenOptions.elementAt(_selectedIndex),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const <BottomNavigationBarItem>[
+          //item pertama
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          //item kedua
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
+          //item ketiga
+          BottomNavigationBarItem( icon: Icon(Icons.favorite), label: 'Favorite'),
+          //item keempat
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+        ],
+        currentIndex: _selectedIndex,
+        onTap: _onItemTapped,
+        showSelectedLabels: true,
+        showUnselectedLabels: true,
+        selectedItemColor: Colors.deepPurple,
+        unselectedItemColor: Colors.deepPurple.shade200,
+      ),
+    );
   }
 }
